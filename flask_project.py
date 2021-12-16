@@ -70,4 +70,3 @@ def pairplot():
     sns_plot = sns.pairplot(data, hue="Survived")
     sns_plot.savefig("static/tmp/pairplot.png")
     return render_template("index.html", links=links, image = ("pairplot.png", "pairplot"))
-app.run()
